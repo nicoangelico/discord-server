@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Express Button Example</title>
+</head>
+<body>
+  <h1>¡Bienvenido a Express Button Example!</h1>
+  <button onclick="redirectToURL()">Redireccionar</button>
+
+  <script>
+    function redirectToURL() {
+      // window.location.href = '<%= decodeURI(discordAuthorizeUrl) %>';
+      window.location.href = 'https://discord.com/oauth2/authorize?client_id=1209292699673563176&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A8080%2Fapi%2Fdiscord%2Fredirect&scope=identify+guilds.join&state=user1234';
+    }
+  </script>
+</body>
+</html>
